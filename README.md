@@ -3,7 +3,7 @@
 
 # ==================
 ```
-uname -a
+$ uname -a
 ```
 
 ```
@@ -11,7 +11,7 @@ Linux portal 4.4.0-190-generic #220-Ubuntu SMP Fri Aug 28 23:02:15 UTC 2020 x86_
 ```
 # ==================
 ```
-lsb_release -a
+$ lsb_release -a
 
 ```
 
@@ -21,5 +21,12 @@ Description:    Ubuntu 16.04.7 LTS
 Release:        16.04
 Codename:       xenial
 ```
+# ==================
+```
+$ bash install_socks.sh
+```
 
+```
+[*] Proccess Installation
+```
 
