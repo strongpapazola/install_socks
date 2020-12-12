@@ -38,7 +38,7 @@ $ curl -v -x socks5://<IP_ADDRESS_YOUR>:1080 ipinfo.io
 
 ```
 * Rebuilt URL to: ipinfo.io/
-*   Trying 117.53.47.252...
+*   Trying <IP_ADDRESS_YOUR>...
 * 216
 * 239
 * 32
