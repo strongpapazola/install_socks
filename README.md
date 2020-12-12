@@ -1,7 +1,7 @@
 # Installation Proxy SOCKS5
 
 
-# ==================
+# 1. Installation
 ```
 $ uname -a
 ```
@@ -30,3 +30,45 @@ $ bash install_socks.sh
 [*] Proccess Installation
 ```
 
+
+# 2. Testing
+```
+$ curl -v -x socks5://<IP_ADDRESS_YOUR>:1080 ipinfo.io
+```
+
+```
+* Rebuilt URL to: ipinfo.io/
+*   Trying 117.53.47.252...
+* 216
+* 239
+* 32
+* 21
+* Connected to <IP_ADDRESS_YOUR> (<IP_ADDRESS_YOUR>) port 1080 (#0)
+> GET / HTTP/1.1
+> Host: ipinfo.io
+> User-Agent: curl/7.47.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Date: Sat, 12 Dec 2020 14:15:11 GMT
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 243
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< X-Frame-Options: DENY
+< X-XSS-Protection: 1; mode=block
+< X-Content-Type-Options: nosniff
+< Referrer-Policy: strict-origin-when-cross-origin
+< Via: 1.1 google
+<
+{
+  "ip": "<IP_ADDRESS_INFO>",
+  "city": "Tangerang",
+  "region": "Banten",
+  "country": "ID",
+  "loc": "-6.1781,106.6300",
+  "org": "AS58397 PT Infinys System Indonesia",
+  "timezone": "Asia/Jakarta",
+  "readme": "https://ipinfo.io/missingauth"
+* Connection #0 to host ipinfo.io left intact
+```
