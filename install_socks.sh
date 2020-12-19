@@ -8,6 +8,7 @@ echo "user.privileged: root" >> /etc/danted.conf
 echo "user.unprivileged: nobody" >> /etc/danted.conf
 echo "internal: 0.0.0.0 port=1080" >> /etc/danted.conf
 echo "external: eth0" >> /etc/danted.conf
+echo "#socksmethod: username #useradd -r -s /bin/false dante; passwd dante ##curl --proxy socks5://dante:dante@localhost:1080 ipinfo.io" >> /etc/danted.conf
 echo "socksmethod: none" >> /etc/danted.conf
 echo "clientmethod: none" >> /etc/danted.conf
 echo "client pass {" >> /etc/danted.conf
